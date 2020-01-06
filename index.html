@@ -1,9 +1,753 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html class="no-js" lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Siddhant Gangapurwala</title>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Siddhant Gangapurwala</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ededed">
+    <meta name="theme-color" content="#c7d4d2">
+
 </head>
 
-</html>
+<body id="top">
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- site header
+================================================== -->
+<header class="s-header">
+
+    <div class="header-logo">
+        <a class="site-logo" href="index.html">
+            <img src="images/logo.svg" alt="Homepage">
+        </a>
+    </div>
+
+    <nav class="header-nav-wrap">
+        <ul class="header-main-nav">
+            <li class="current"><a class="smoothscroll" href="#intro" title="intro">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+            <li><a class="smoothscroll" href="#works" title="works">Projects</a></li>
+            <li><a class="smoothscroll" href="#services" title="services">Skills</a></li>
+            <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
+        </ul>
+
+        <ul class="header-social">
+            <li><a href="https://github.com/gsiddhant" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+
+    <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+</header> <!-- end s-header -->
+
+
+<!-- intro
+================================================== -->
+<section id="intro" class="s-intro target-section">
+    <div class="landing-picture-container">
+        <div class="landing-picture"></div>
+    </div>
+
+    <div class="row intro-content">
+        <div class="column large-9 mob-full intro-text">
+            <h1>
+                Siddhant<br>
+                Gangapurwala</h1>
+            <h3>
+                Machine Learning and Robotics
+                <br>
+                Researcher
+            </h3>
+        </div>
+
+        <div class="intro-grid"></div>
+        <div class="intro-pic">
+            <video class="intro-video" autoplay loop muted>
+                <source src="videos/landing_video_gray.mp4" type="video/mp4">
+            </video>
+
+            <div class="intro-video-overlay"></div>
+
+        </div>
+
+    </div> <!-- end row -->
+
+</section> <!-- end intro -->
+
+
+<!-- about
+================================================== -->
+<section id="about" class="s-about target-section">
+
+    <div class="about-me">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">About</h2>
+            </div>
+        </div>
+
+        <div class="row about-me__content" data-aos="fade-up">
+            <div class="column large-full about-me__text">
+                <p>
+                    <img src="images/my_picture.png" alt=""><br>
+                </p>
+                <p class="lead">
+                    I am a doctoral researcher with the <a href="https://ori.ox.ac.uk/labs/drs/" target="_blank">Dynamic
+                    Robot Systems</a> group, <a href="https://ori.ox.ac.uk/" target="_blank">Oxford Robotics
+                    Institute</a>, <a href="https://ox.ac.uk/" target="_blank">University of Oxford</a>. I am also a
+                    part
+                    of the <a href="https://www.eng.ox.ac.uk/aims-cdt/" target="_blank">Autonomous Intelligence Machines
+                    and Systems</a> programme.
+                </p>
+                <p>
+                    My current research focuses on development of unified Optimal Control and Reinforcement Learning
+                    based approaches for robotic control and locomotion.
+                </p>
+                <p>
+                    As an undergrad, I studied Electronics Engineering at the University of Mumbai where I worked on
+                    several projects which involved development of Embedded Systems for robotic applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="row about-me__buttons">
+            <div class="column large-half tab-full" data-aos="fade-up">
+                <a href="#contact" class="btn btn--stroke full-width smoothscroll">Get in touch</a>
+            </div>
+            <div class="column large-half tab-full" data-aos="fade-up">
+                <a href="cv.pdf" download class="btn btn--primary full-width">Download CV</a>
+            </div>
+        </div>
+
+    </div> <!-- end about-me -->
+
+    <div class="about-experience">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Education and Work</h2>
+            </div>
+        </div>
+
+        <div class="row about-experience__timeline">
+
+            <div class="column large-half tab-full" data-aos="fade-up">
+                <div class="timeline">
+
+                    <div class="timeline__icon-wrap">
+                        <span class="timeline__icon timeline__icon--education"></span>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">October 2017 - Present</p>
+                            <h3 class="item-title">University of Oxford</h3>
+                            <h5>Doctor of Philosophy</h5>
+                            <p class="timeline__post">Autonomous Intelligent Machines and Systems</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p><strong>Research:</strong><br>Trajectory Optimization and Policy Gradients based Unified
+                                Framework for
+                                Robotic Control
+                                <br>
+                                <strong>Supervisors:</strong><br>Dr. Ioannis Havoutis and Prof. Ingmar Posner</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">July 2012 - June 2016</p>
+                            <h3 class="item-title">University of Mumbai</h3>
+                            <h5>Bachelor of Engineering</h5>
+                            <p class="timeline__post">Electronics</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p><strong>Final Year Project:</strong><br>Micro-controller based Low-Powered
+                                Semi-Autonomous Quadcopter</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column large-half tab-full" data-aos="fade-up">
+                <div class="timeline">
+
+                    <div class="timeline__icon-wrap">
+                        <span class="timeline__icon timeline__icon--work"></span>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">June 2018 - August 2018</p>
+                            <h3 class="item-title">ETH Zurich</h3>
+                            <h5>Visiting Researcher</h5>
+                            <p class="timeline__post">Robotics Systems
+                                Lab</a></p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p><strong>Project:</strong><br>Heterogeneous Swarm Optimization using Deep Reinforcement
+                                Learning
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">February 2017 - May 2017</p>
+                            <h3 class="item-title">Rucha Yantra</h3>
+                            <h5>Mobile Robot Hardware and Software Developer</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p><strong>Summary:</strong><br>Designed low-level control circuit board housing an STM32
+                                micro-controller interfaced with on-board navigation computers. Further developed ROS
+                                based navigation and perception frameworks for robot autonomy</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end about-experience -->
+
+</section> <!-- end s-about -->
+
+<!-- works
+================================================== -->
+<section id="works" class="s-works target-section">
+
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+            <h2 class="section-heading section-heading--centerbottom" style="color: #EEEEEE">Selected Projects</h2>
+            <p class="section-desc" style="color: #EEEEEE">
+                Here are some of the projects I have worked on. Feel free to
+                check them out.
+            </p>
+        </div>
+    </div> <!-- end heading-block -->
+
+    <div class="masonry-wrap">
+
+        <div class="masonry">
+            <div class="grid-sizer"></div>
+
+            <div class="masonry__brick" data-aos="fade-up">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <!-- Tint Color: #432411 -->
+                        <a href="" class="thumb-link" title="GCPO"
+                           data-size="1050x700">
+                            <img src="images/portfolio/anymal_rl.PNG"
+                                 srcset="images/portfolio/anymal_rl.PNG 1x"
+                                 alt="">
+                        </a>
+                        <a href="https://youtu.be/ZaRCL_qzC5Q" class="item-folio__project-link" title="Video Summary"
+                           target="_blank"></a>
+                    </div>
+
+                    <div class="item-folio__text">
+                        <h4 class="item-folio__title">
+                            Guided Constrained Policy Optimization for Dynamic Quadruped Robot Locomotion <i>- Submitted
+                            to RA-L 2020</i>
+                        </h4>
+                        <p class="item-folio__cat">
+                            <a href="gcpo.pdf" target="_blank">Report</a>
+                        </p>
+                        <p class="item-folio__cat">
+                            <a href="https://youtu.be/ZaRCL_qzC5Q" target="_blank">Video Summary</a>
+                        </p>
+                        <p class="item-folio__cat">
+                            <a href="exp.html" target="_blank">Field Trials</a>
+                        </p>
+                    </div>
+                    <div class="item-folio__caption"></div>
+                </div>
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="" class="thumb-link" title="HSRL"
+                           data-size="1050x700">
+                            <img src="images/portfolio/hsrl.png"
+                                 srcset="images/portfolio/hsrl.png 1x"
+                                 alt="">
+                        </a>
+                        <a href="hsrl.pdf" class="item-folio__project-link" title="Report Link"
+                           target="_blank"></a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h4 class="item-folio__title">
+                            Heterogeneous Swarm Optimization using Deep Reinforcement Learning
+                        </h4>
+                        <p class="item-folio__cat">
+                            <a href="hsrl.pdf" target="_blank">Report</a>
+                        </p>
+                    </div>
+                    <div class="item-folio__caption">
+                        <p></p>
+                    </div>
+                </div>
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="" class="thumb-link" title="GAIL"
+                           data-size="1050x700">
+                            <img src="images/portfolio/gail.png"
+                                 srcset="images/portfolio/gail.png 1x"
+                                 alt="">
+                        </a>
+                        <a href="gail.pdf"
+                           class="item-folio__project-link" title="Report Link"
+                           target="_blank"></a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h4 class="item-folio__title">
+                            Generative Adversarial Imitation Learning for Quadrupedal Footstep Planning
+                        </h4>
+                        <p class="item-folio__cat">
+                            <a href="gail.pdf" target="_blank">Report</a>
+                        </p>
+                        <p class="item-folio__cat">
+                            <a href="gtest.html" target="_blank">Demo</a>
+                        </p>
+                    </div>
+                    <div class="item-folio__caption">
+                        <p></p>
+                    </div>
+                </div>
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+                <div class="item-folio">
+                    <div class="item-folio__thumb">
+                        <a href="" class="thumb-link" title="AgroQuad"
+                           data-size="1050x700">
+                            <img src="images/portfolio/aq.png"
+                                 srcset="images/portfolio/aq.png 1x"
+                                 alt="">
+                        </a>
+                        <a href="https://projectsjalark.wordpress.com/2016/10/24/agroquad/"
+                           class="item-folio__project-link" title="Project Link"
+                           target="_blank"></a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h4 class="item-folio__title">
+                            Micro-controller based Low-Powered Semi-Autonomous Agricultural Quadcopter
+                        </h4>
+                        <p class="item-folio__cat">
+                            <a href="aq.pdf" target="_blank">Report</a>
+                        </p>
+                    </div>
+                    <div class="item-folio__caption">
+                        <p></p>
+                    </div>
+                </div>
+            </div> <!-- end masonry__brick -->
+
+            <div class="masonry__brick" data-aos="fade-up">
+                <div class="item-folio">
+
+                    <div class="item-folio__thumb">
+                        <a href="" class="thumb-link" title="Autnomous Mobile Robot"
+                           data-size="1050x700">
+                            <img src="images/portfolio/amr.png"
+                                 srcset="images/portfolio/amr.png 1x"
+                                 alt="">
+                        </a>
+                        <a href="https://www.yantrallp.com/" class="item-folio__project-link" title="Company Link"
+                           target="_blank"></a>
+                    </div>
+                    <div class="item-folio__text">
+                        <h4 class="item-folio__title">
+                            Development of Electronics and Navigation Software Framework for an Autonomous Mobile Robot
+                        </h4>
+                    </div>
+                    <div class="item-folio__caption">
+                        <p></p>
+                    </div>
+                </div>
+            </div> <!-- end masonry__brick -->
+
+        </div> <!-- end masonry -->
+
+    </div> <!-- end masonry-wrap -->
+
+</section> <!-- end s-work -->
+
+<!-- services
+================================================== -->
+<section id="services" class="s-services ss-dark target-section">
+
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+            <h2 class="section-heading section-heading--centerbottom capabilities" style="color: black">Programming</h2>
+        </div>
+    </div> <!-- end heading-block -->
+
+    <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">C/C++</h4>
+                <p>
+                    I mostly used C for my Embedded Systems projects in which I largely worked on
+                    ARM Cortex M based micro-controllers. I used C++ for my Robotics projects and have been
+                    using it extensively for my current research.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Python</h4>
+                <p>
+                    I consider Python to be a brilliant prototyping tool. I use it extensively for machine learning
+                    especially for training RL agents as part of my research. I then port most of my models to C++ for
+                    use with physical hardware.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">MATLAB</h4>
+                <p>
+                    I do not use MATLAB often but it has been quite a convenient tool for performing basic control
+                    optimizations.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Assembly</h4>
+                <p>
+                    I'm familiar with the instruction sets for Intel 8051 and 8086. I used these for some of my embedded
+                    systems projects. I also have some experience with MIPS, but cannot say I remember much.
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- end services-list -->
+
+    <div class="extra-padding"></div>
+
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+            <h2 class="section-heading section-heading--centerbottom capabilities" style="color: black">Libraries and
+                Frameworks</h2>
+        </div>
+    </div> <!-- end heading-block -->
+
+    <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Boost</h4>
+                <p>
+                    Definitely a great library. Was very important in a project where I developed my own
+                    shared memory based inter-process communication library.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Eigen</h4>
+                <p>
+                    I have used Eigen in every Robotics C++ project I have worked on.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">PyTorch</h4>
+                <p>
+                    It has been my go-to Deep Learning framework.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">PyTorch C++</h4>
+                <p>
+                    This has been very useful for me to be able to port my models trained in Python to C++ with ease.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Tensorflow</h4>
+                <p>
+                    I definitely use PyTorch more than I use Tensorflow but I do much of my RL training using Tensorflow
+                    based frameworks and hence use it often.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">OpenAI Baselines</h4>
+                <p>
+                    I use baselines for training RL agents using some of the widely used RL algorithms. This is mostly
+                    for prototyping after which, in most cases, I use my own implementation of these algorithms.
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- end services-list -->
+
+    <div class="extra-padding"></div>
+
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+            <h2 class="section-heading section-heading--centerbottom capabilities" style="color: black">Robotic Simulators</h2>
+        </div>
+    </div> <!-- end heading-block -->
+
+    <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">MuJoCo</h4>
+                <p>
+                    I first started RL with MuJoCo since it was widely used along with the OpenAI Gym framework.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">PyBullet</h4>
+                <p>
+                    I also tested PyBullet for training some RL agents. In fact, PyBullet was my first choice when I
+                    started training an RL policy for controlling the ANYmal quadruped using.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">RaiSim</h4>
+                <p>
+                    Most RL algorithms have been known to be extremely sample inefficient. To train a feasible RL policy
+                    thus necessitates super fast simulators. And that is pretty much why I greatly enjoy using RaiSim. I
+                    now use it as the go-to simulator for RL.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">V-REP</h4>
+                <p>
+                    I experimented with V-REP for RL. Cannot say I use it a lot. Do like the drag and drop features it
+                    supports though.
+                </p>
+            </div>
+        </div>
+
+        <div class="column item-service" data-aos="fade-up">
+            <div class="item-service__content">
+                <h4 class="item-title">Gazebo</h4>
+                <p>
+                    I use Gazebo with all of my ROS projects. Everything I do on the real robot is first tested using
+                    Gazebo.
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- end services-list -->
+
+</section> <!-- end s-services -->
+
+<!-- testimonies
+================================================== -->
+<!--<section class="s-testimonials">-->
+
+<!--    <div class="row testimonials" data-aos="fade-up">-->
+
+<!--        <div class="column large-full testimonials__slider">-->
+
+<!--            <div class="testimonials__slide">-->
+<!--                <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem.-->
+<!--                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem-->
+<!--                    nihil nostrum.-->
+<!--                    Laudantium quia consequatur molestias delectus culpa.</p>-->
+<!--                <div class="testimonials__info">-->
+<!--                    <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">-->
+<!--                    <cite class="testimonials__cite">-->
+<!--                        <strong>Tim Cook</strong>-->
+<!--                        <span>CEO, Apple</span>-->
+<!--                    </cite>-->
+<!--                </div>-->
+<!--            </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
+
+<!--            <div class="testimonials__slide">-->
+<!--                <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi-->
+<!--                    adipisci.-->
+<!--                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.-->
+<!--                    Quasi voluptas eius distinctio. Atque eos maxime.</p>-->
+<!--                <div class="testimonials__info">-->
+<!--                    <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">-->
+<!--                    <cite class="testimonials__cite">-->
+<!--                        <strong>Sundar Pichai</strong>-->
+<!--                        <span>CEO, Google</span>-->
+<!--                    </cite>-->
+<!--                </div>-->
+<!--            </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
+
+<!--            <div class="testimonials__slide">-->
+<!--                <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt.-->
+<!--                    Ducimus aut sed ipsam.-->
+<!--                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.-->
+<!--                    Voluptatem dignissimos ut.</p>-->
+<!--                <div class="testimonials__info">-->
+<!--                    <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">-->
+<!--                    <cite class="testimonials__cite">-->
+<!--                        <strong>Satya Nadella</strong>-->
+<!--                        <span>CEO, Microsoft</span>-->
+<!--                    </cite>-->
+<!--                </div>-->
+<!--            </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
+
+<!--        </div> &lt;!&ndash; end testimonials__slider &ndash;&gt;-->
+
+<!--    </div> &lt;!&ndash; end testimonials &ndash;&gt;-->
+
+<!--</section> &lt;!&ndash; end s-testimonials &ndash;&gt;-->
+
+
+<!-- contact
+================================================== -->
+<section id="contact" class="s-contact ss-dark target-section">
+
+    <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+            <h2 class="section-heading section-heading--centerbottom">Get In Touch</h2>
+        </div>
+    </div>
+
+    <div class="row contact-main" data-aos="fade-up">
+        <div class="column large-full">
+            <p class="contact-email">
+                <a href="mailto:contact@gangapurwala.com">contact@gangapurwala.com</a>
+            </p>
+
+            <p class="section-desc">
+                I'll be glad to connect, discuss and collaborate. This could be
+                related to work or could be about hiking, painting, music, travelling or history. Feel free to shoot me
+                an <a href="mailto:contact@gangapurwala.com">e-mail</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+        <div class="column large-5 medium-full contact-phone">
+            <h4>Location</h4>
+            <a href="https://goo.gl/maps/wCMv8zQw7S5UYT9e7" target="_blank">Oxford, United Kingdom</a>
+        </div>
+    </div> <!-- end contact-infos -->
+
+    <div class="row"><p><br></p></div>
+
+</section> <!-- end s-contact -->
+
+
+<!-- photoswipe background
+================================================== -->
+<div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title=
+                        "Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title=
+                        "Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title=
+                    "Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- end photoSwipe background -->
+
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
