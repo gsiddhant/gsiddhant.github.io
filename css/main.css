@@ -1814,6 +1814,22 @@ input::-moz-focus-inner {
 
 }
 
+
+@media screen and (max-width: 1200px) {
+    .header-main-nav {
+        font-size: 12px;
+    }
+
+    .header-main-nav li {
+        margin: 0 1.4rem;
+    }
+
+    .intro-video {
+        transform: translate(-30%, 0);
+    }
+
+}
+
 @media screen and (max-width: 1000px) {
     .s-header {
         text-align: right;
@@ -1978,6 +1994,7 @@ input::-moz-focus-inner {
 .intro-video {
     position: absolute;
     transform: translate(-30%, 0);
+    min-height: 100%;
 }
 
 .intro-video-overlay {
