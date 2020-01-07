@@ -1401,12 +1401,10 @@ input::-moz-focus-inner {
 }
 
 .pgn__prev {
-    background-image: url("../images/icons/icon-arrow-left.svg");
     left: 0;
 }
 
 .pgn__next {
-    background-image: url("../images/icons/icon-arrow-right.svg");
     right: 0;
 }
 
